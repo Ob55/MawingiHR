@@ -55,6 +55,6 @@ app.use((req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`Mawingu HR Solutions running at http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Mawingu HR Solutions running on port ${PORT}`);
 });

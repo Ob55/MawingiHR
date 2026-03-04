@@ -1,3 +1,4 @@
+
 /* ============================================
    MAWINGU HR SOLUTIONS
    Clarity in People. Structure in Growth.
@@ -1014,6 +1015,16 @@ h4 { font-size: 1.2rem; font-family: var(--font-body); font-weight: 600; }
 .avatar-placeholder svg {
   width: 100px;
   height: 100px;
+}
+
+.leader-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 3px solid var(--color-blue);
+  box-shadow: 0 4px 15px rgba(27, 58, 107, 0.12);
 }
 
 .leader-info h3 {

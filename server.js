@@ -3,13 +3,26 @@ const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const ASSET_VERSION = '20260521-redesign-18';
+// URL of the blog admin's /api/posts endpoint. The Vercel deployment of the
+// MawingHRBlog repo serves this. Override with the BLOG_API_URL env var if the
+// admin ever moves to a different host.
+const BLOG_API_URL = process.env.BLOG_API_URL || 'https://mawing-hr-blog.vercel.app/api/posts';
 
 // View engine
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
+app.use((req, res, next) => {
+  res.locals.assetVersion = ASSET_VERSION;
+  res.locals.blogApiUrl = BLOG_API_URL;
+  next();
+});
+
 // Static files
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public'), {
+  maxAge: 0
+}));
 
 // Routes
 app.get('/', (req, res) => {
@@ -40,6 +53,13 @@ app.get('/professional-services', (req, res) => {
   });
 });
 
+app.get('/blog', (req, res) => {
+  res.render('blog', {
+    title: 'Blog & Insights — Mawingu HR Solutions',
+    page: 'blog'
+  });
+});
+
 app.get('/contact', (req, res) => {
   res.render('contact', {
     title: 'Contact Us — Mawingu HR Solutions',
@@ -55,6 +75,30 @@ app.use((req, res) => {
   });
 });
 
-app.listen(PORT, '0.0.0.0', () => {
+// Start server
+const server = app.listen(PORT, '0.0.0.0', () => {
   console.log(`Mawingu HR Solutions running on port ${PORT}`);
+});
+
+// Graceful shutdown handlers - FIX FOR CPANEL LOCK
+process.on('SIGTERM', () => {
+  console.log('SIGTERM received, shutting down gracefully...');
+  server.close(() => {
+    console.log('Server closed');
+    process.exit(0);
+  });
+});
+
+process.on('SIGINT', () => {
+  console.log('SIGINT received, shutting down gracefully...');
+  server.close(() => {
+    console.log('Server closed');
+    process.exit(0);
+  });
+});
+
+// Handle uncaught errors
+process.on('uncaughtException', (err) => {
+  console.error('Uncaught Exception:', err);
+  process.exit(1);
 });

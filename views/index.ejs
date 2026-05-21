@@ -1,268 +1,348 @@
 <%- include('partials/header') %>
 
-<!-- Hero Section -->
-<section class="hero">
-  <div class="hero-bg-shapes" aria-hidden="true">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-    <div class="cloud-drift cloud-drift-1">
-      <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="100" cy="50" rx="80" ry="30" fill="rgba(46,123,213,0.06)"/>
-        <ellipse cx="70" cy="45" rx="50" ry="22" fill="rgba(46,123,213,0.04)"/>
-        <ellipse cx="130" cy="48" rx="55" ry="25" fill="rgba(46,123,213,0.05)"/>
-      </svg>
-    </div>
-    <div class="cloud-drift cloud-drift-2">
-      <svg viewBox="0 0 180 70" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="90" cy="40" rx="70" ry="25" fill="rgba(27,63,107,0.05)"/>
-        <ellipse cx="60" cy="38" rx="45" ry="18" fill="rgba(27,63,107,0.03)"/>
-      </svg>
-    </div>
+<!-- ============================================
+     CINEMATIC HERO — cloud video, Instrument Serif italic
+     Inspired by Velorah + HR_SaaS_Hero + Liquid Glass Agency
+     ============================================ -->
+<section class="hero-clean">
+  <!-- Cloud video background (drifts upward, flipped, faded into navy) -->
+  <div class="hero-cinema-video" aria-hidden="true">
+    <video autoplay loop muted playsinline preload="auto"
+           poster="/images/corporate/team-building-1.jpg">
+      <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260302_085640_276ea93b-d7da-4418-a09b-2aa5b490e838.mp4" type="video/mp4">
+    </video>
   </div>
 
-  <div class="container hero-content">
-    <div class="hero-text">
-      <div class="hero-badge reveal-up">People Strategy Advisory</div>
-      <h1 class="hero-title">
-        <span class="reveal-up delay-1">Clarity in People.</span>
-        <span class="reveal-up delay-2 text-accent">Structure in Growth.</span>
-      </h1>
-      <p class="hero-description reveal-up delay-3">
-        Mawingu HR Solutions partners with growth-stage businesses and ambitious
-        professionals to build structured, scalable People systems that drive performance.
+  <!-- Cinematic editorial headline -->
+  <h1 class="hero-clean-title">
+    <span class="blur-words">
+      <span class="w" style="--i:0">Where</span>
+      <span class="w" style="--i:1">people</span>
+      <span class="w glow" style="--i:2">strategy</span><br>
+      <span class="w" style="--i:3">meets</span>
+      <span class="w muted" style="--i:4">structured</span>
+      <span class="w" style="--i:5">growth.</span>
+    </span>
+  </h1>
+
+  <p class="hero-clean-sub fade-up" style="--delay: 800ms">
+    We help small and growing businesses in Kenya institutionalize HR &mdash; calm systems, real compliance, structured culture. So you can scale without stalling.
+  </p>
+
+  <div class="hero-clean-actions fade-up" style="--delay: 920ms">
+    <a href="https://wa.me/254717736303?text=Hello%20Mawingu%2C%20I'd%20like%20to%20book%20a%20consultation."
+       class="btn btn-primary btn-lg"
+       target="_blank" rel="noopener"
+       style="padding: 20px 36px;">
+      <span>Book a consultation</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <a href="/corporate-services" class="liquid-glass-strong btn btn-lg"
+       style="color: var(--white); border-radius: 999px; padding: 20px 36px;">
+      <span>Explore services</span>
+    </a>
+  </div>
+
+  <!-- Trusted-by row (small avatars + count) -->
+  <div class="fade-up" style="--delay: 1040ms; margin-top: clamp(48px, 5vw, 80px); display: inline-flex; align-items: center; gap: 14px;">
+    <div style="display: inline-flex; align-items: center;">
+      <span style="display: inline-block; width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg, #4A90E2, #1E5BA8); border: 2px solid #04101F;"></span>
+      <span style="display: inline-block; width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg, #BFD7F0, #4A90E2); border: 2px solid #04101F; margin-left: -10px;"></span>
+      <span style="display: inline-block; width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg, #1E5BA8, #0B1E3F); border: 2px solid #04101F; margin-left: -10px;"></span>
+      <span style="display: inline-block; width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg, #7FA8DA, #2C72C8); border: 2px solid #04101F; margin-left: -10px;"></span>
+    </div>
+    <span style="font-family: 'Open Sans', sans-serif; font-size: 0.92rem; color: var(--on-navy-soft);">
+      Trusted by founders building <span style="color: var(--white); font-weight: 600;">growth-stage teams</span> in Kenya
+    </span>
+  </div>
+
+  <!-- Marquee at the very bottom of hero -->
+  <div class="hero-marquee" aria-hidden="true" style="margin-top: clamp(48px, 6vw, 96px);">
+    <div class="marquee-track">
+      <span><span class="serif">·</span> HR Strategy</span>
+      <span><span class="serif">·</span> Compliance</span>
+      <span><span class="serif">·</span> Recruitment</span>
+      <span><span class="serif">·</span> Performance</span>
+      <span><span class="serif">·</span> Culture</span>
+      <span><span class="serif">·</span> Payroll</span>
+      <span><span class="serif">·</span> Leadership</span>
+      <span><span class="serif">·</span> BPO Operations</span>
+      <!-- duplicate for seamless loop -->
+      <span><span class="serif">·</span> HR Strategy</span>
+      <span><span class="serif">·</span> Compliance</span>
+      <span><span class="serif">·</span> Recruitment</span>
+      <span><span class="serif">·</span> Performance</span>
+      <span><span class="serif">·</span> Culture</span>
+      <span><span class="serif">·</span> Payroll</span>
+      <span><span class="serif">·</span> Leadership</span>
+      <span><span class="serif">·</span> BPO Operations</span>
+    </div>
+  </div>
+</section>
+
+<!-- Diagonal divider transitioning hero → about band -->
+<div class="diagonal-divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+    <polygon points="0,0 0,120 1440,120 1440,80 920,80 680,0" fill="#04101F"/>
+  </svg>
+</div>
+
+<!-- ============================================
+     ABOUT BAND — "Mawingu means clouds"
+     NeoVision-inspired media + tags layout
+     ============================================ -->
+<section class="about-band">
+  <div class="about-band-grid">
+    <div class="about-band-media fade-up">
+      <img src="/images/corporate/team-building-1.jpg"
+           alt="Mawingu — connecting people with purpose"
+           loading="eager"
+           fetchpriority="high"
+           decoding="async"
+           width="2000" height="1333">
+      <span class="media-tag">Connecting people with purpose</span>
+    </div>
+
+    <div class="about-band-content">
+      <span class="label label-light fade-up">About Mawingu</span>
+      <h2 class="fade-up" style="--delay: 80ms">
+        <em>Mawingu</em> means clouds. <span class="muted">Light, clear, always above.</span>
+      </h2>
+      <p class="fade-up" style="--delay: 160ms">
+        We exist to take the weight of HR off founders. So your team can grow, your compliance holds, and your culture doesn&rsquo;t bend under pressure.
       </p>
-      <div class="hero-actions reveal-up delay-4">
-        <a href="https://wa.me/254717736303?text=Hello%20Mawingu%2C%20I'd%20like%20to%20discuss%20HR%20advisory%20services." class="btn btn-primary" target="_blank" rel="noopener">
-          <span>Work With Us</span>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <a href="/professional-services" class="btn btn-outline">
-          <span>Explore Career Services</span>
-        </a>
+      <div class="about-band-tags stagger">
+        <span>Small businesses</span>
+        <span>5–30 people</span>
+        <span>Family-owned</span>
+        <span>Startups</span>
+        <span>Professional firms</span>
       </div>
-    </div>
-
-    <div class="hero-visual reveal-scale delay-2">
-      <img class="hero-logo-large" src="/images/mawingu-logo.png" alt="Mawingu HR Solutions Logo">
-    </div>
-  </div>
-
-  <div class="hero-scroll-hint reveal-up delay-5" aria-hidden="true">
-    <span>Scroll to explore</span>
-    <div class="scroll-line"></div>
-  </div>
-</section>
-
-<!-- Reality of Scaling Section -->
-<section class="section section-reality">
-  <div class="container">
-    <div class="split-layout">
-      <div class="split-left">
-        <span class="section-label reveal-up">The Challenge</span>
-        <h2 class="section-title reveal-up delay-1">The Reality<br>of Scaling</h2>
-        <p class="section-subtitle reveal-up delay-2">Growth exposes people gaps.</p>
-      </div>
-
-      <div class="split-right">
-        <div class="reality-card reveal-right delay-1">
-          <h3>When HR is informal:</h3>
-          <ul class="reality-list">
-            <li class="reveal-right delay-2">
-              <span class="reality-icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-coral)" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
-              </span>
-              Leaders spend time resolving conflict instead of driving strategy
-            </li>
-            <li class="reveal-right delay-3">
-              <span class="reality-icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-coral)" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
-              </span>
-              Hiring becomes reactive
-            </li>
-            <li class="reveal-right delay-4">
-              <span class="reality-icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-coral)" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
-              </span>
-              Compliance risks increase
-            </li>
-            <li class="reveal-right delay-5">
-              <span class="reality-icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-coral)" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
-              </span>
-              Performance lacks accountability
-            </li>
-            <li class="reveal-right delay-6">
-              <span class="reality-icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-coral)" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
-              </span>
-              Culture weakens
-            </li>
-          </ul>
-        </div>
-
-        <div class="reality-resolution reveal-up delay-3">
-          <blockquote>
-            <p>HR is not administration.<br><strong>It is operational infrastructure.</strong></p>
-          </blockquote>
-          <p class="resolution-text">Mawingu builds that infrastructure.</p>
-        </div>
+      <div class="fade-up" style="--delay: 320ms; margin-top: 8px;">
+        <a href="/about" class="liquid-glass-strong btn"
+           style="color: var(--white); border-radius: 999px; padding: 16px 28px;">
+          <span>Our story</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Pillars Section -->
-<section class="section section-pillars">
-  <div class="container">
-    <span class="section-label reveal-up">What We Do</span>
-    <h2 class="section-title reveal-up delay-1">Four Strategic Pillars</h2>
-    <p class="section-intro reveal-up delay-2">We operate across four interconnected domains to build complete People infrastructure.</p>
-
-    <div class="pillars-grid">
-      <article class="pillar-card reveal-up delay-1" data-pillar="architecture">
-        <div class="pillar-icon">
-          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="44" width="48" height="4" rx="2" fill="var(--color-navy)" opacity="0.2"/>
-            <rect x="14" y="34" width="36" height="4" rx="2" fill="var(--color-navy)" opacity="0.35"/>
-            <rect x="20" y="24" width="24" height="4" rx="2" fill="var(--color-navy)" opacity="0.5"/>
-            <rect x="26" y="14" width="12" height="4" rx="2" fill="var(--color-navy)" opacity="0.7"/>
-            <circle cx="32" cy="10" r="3" fill="var(--color-blue)"/>
-          </svg>
-        </div>
-        <h3>People Architecture</h3>
-        <p>Organizational design, HR frameworks, policy systems, workforce planning.</p>
-        <a href="/corporate-services" class="pillar-link">Learn more
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </article>
-
-      <article class="pillar-card reveal-up delay-2" data-pillar="governance">
-        <div class="pillar-icon">
-          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-            <path d="M32 8 L56 22 V46 L32 56 L8 46 V22 Z" fill="none" stroke="var(--color-navy)" stroke-width="2" opacity="0.3"/>
-            <path d="M32 16 L48 26 V38 L32 46 L16 38 V26 Z" fill="none" stroke="var(--color-navy)" stroke-width="2" opacity="0.5"/>
-            <path d="M32 24 L40 30 V34 L32 38 L24 34 V30 Z" fill="var(--color-blue)" opacity="0.6"/>
-            <circle cx="32" cy="32" r="4" fill="var(--color-blue)"/>
-          </svg>
-        </div>
-        <h3>Governance & Compliance</h3>
-        <p>Labour law advisory, payroll structure, risk mitigation, documentation systems.</p>
-        <a href="/corporate-services" class="pillar-link">Learn more
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </article>
-
-      <article class="pillar-card reveal-up delay-3" data-pillar="performance">
-        <div class="pillar-icon">
-          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 48 L24 32 L36 38 L52 14" fill="none" stroke="var(--color-blue)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="12" cy="48" r="3" fill="var(--color-navy)" opacity="0.4"/>
-            <circle cx="24" cy="32" r="3" fill="var(--color-navy)" opacity="0.55"/>
-            <circle cx="36" cy="38" r="3" fill="var(--color-navy)" opacity="0.7"/>
-            <circle cx="52" cy="14" r="4" fill="var(--color-blue)"/>
-            <path d="M46 14 L52 14 L52 20" fill="none" stroke="var(--color-blue)" stroke-width="2.5" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <h3>Performance & Capability</h3>
-        <p>KPI frameworks, appraisal systems, leadership development, succession planning.</p>
-        <a href="/corporate-services" class="pillar-link">Learn more
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </article>
-
-      <article class="pillar-card reveal-up delay-4" data-pillar="talent">
-        <div class="pillar-icon">
-          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="32" cy="20" r="10" fill="none" stroke="var(--color-navy)" stroke-width="2" opacity="0.5"/>
-            <circle cx="32" cy="20" r="5" fill="var(--color-blue)" opacity="0.6"/>
-            <path d="M16 50 C16 38 48 38 48 50" fill="none" stroke="var(--color-navy)" stroke-width="2" opacity="0.4"/>
-            <circle cx="18" cy="36" r="3" fill="var(--color-blue)" opacity="0.3"/>
-            <circle cx="46" cy="36" r="3" fill="var(--color-blue)" opacity="0.3"/>
-          </svg>
-        </div>
-        <h3>Talent Strategy</h3>
-        <p>Structured recruitment, executive search, employer branding.</p>
-        <a href="/corporate-services" class="pillar-link">Learn more
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </article>
+<!-- ============================================
+     WHAT WE DO — two audience cards (kept but on dark surface)
+     ============================================ -->
+<section class="surface-navy" style="padding: clamp(40px, 5vw, 80px) 0 clamp(80px, 9vw, 140px);">
+  <div class="wrap" style="margin-bottom: clamp(32px, 4vw, 56px);">
+    <div class="section-head" style="padding: 0; margin-bottom: 0;">
+      <h2 class="fade-up" style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: var(--white); letter-spacing: -0.02em;">
+        What we <em style="color: var(--sky);">do</em>.
+      </h2>
+      <p class="head-sub fade-up" style="--delay: 80ms; color: var(--on-navy-soft);">
+        Two practices, one discipline. We work with growth-stage businesses and ambitious individuals &mdash; bringing the same structured rigour to both.
+      </p>
     </div>
-
-    <p class="pillars-note reveal-up">For professionals, we deliver structured career positioning that increases employability and confidence.</p>
   </div>
-</section>
 
-<!-- Why Mawingu Section -->
-<section class="section section-why">
-  <div class="container">
-    <div class="why-layout">
-      <div class="why-left">
-        <span class="section-label reveal-up">Why Mawingu</span>
-        <h2 class="section-title reveal-up delay-1">Built Different.<br>Built to Last.</h2>
-        <div class="why-statement reveal-up delay-2">
-          <p>We do not "manage HR."</p>
-          <p class="highlight">We institutionalize People Strategy.</p>
-        </div>
-      </div>
-
-      <div class="why-right">
-        <ul class="why-list">
-          <li class="why-item reveal-right delay-1">
-            <div class="why-marker" aria-hidden="true">01</div>
-            <div>
-              <h4>Deep understanding of Kenyan labour law</h4>
-            </div>
-          </li>
-          <li class="why-item reveal-right delay-2">
-            <div class="why-marker" aria-hidden="true">02</div>
-            <div>
-              <h4>International governance exposure</h4>
-            </div>
-          </li>
-          <li class="why-item reveal-right delay-3">
-            <div class="why-marker" aria-hidden="true">03</div>
-            <div>
-              <h4>Executive-level HR advisory tailored for SMEs</h4>
-            </div>
-          </li>
-          <li class="why-item reveal-right delay-4">
-            <div class="why-marker" aria-hidden="true">04</div>
-            <div>
-              <h4>Structured systems — not reactive fixes</h4>
-            </div>
-          </li>
-          <li class="why-item reveal-right delay-5">
-            <div class="why-marker" aria-hidden="true">05</div>
-            <div>
-              <h4>Practical implementation</h4>
-            </div>
-          </li>
+  <div class="audience-band" style="padding-top: 0; padding-bottom: 0;">
+    <div class="audience-grid stagger">
+      <a href="/corporate-services" class="audience-card">
+        <img class="ac-media"
+             src="/images/corporate/team-building-1.jpg"
+             alt="Strategic HR advisory for businesses"
+             loading="lazy" decoding="async"
+             width="2000" height="1333">
+        <span class="ac-eyebrow">For businesses</span>
+        <h3>Corporate <em class="serif" style="color: var(--sky);">HR</em> services.</h3>
+        <p>HR architecture, compliance, performance systems, talent strategy and BPO operations &mdash; built for SMEs and scale-ups in Kenya.</p>
+        <ul>
+          <li>Strategic HR advisory</li>
+          <li>Recruitment &amp; executive search</li>
+          <li>Performance &amp; culture systems</li>
+          <li>BPO &amp; call centre operations</li>
         </ul>
-      </div>
+        <span class="ac-link">
+          See corporate services
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+
+      <a href="/professional-services" class="audience-card">
+        <img class="ac-media"
+             src="/images/corporate/team-building-3.jpg"
+             alt="Career services for professionals"
+             loading="lazy" decoding="async"
+             width="2000" height="1333">
+        <span class="ac-eyebrow">For professionals</span>
+        <h3>Career <em class="serif" style="color: var(--sky);">repositioning</em>.</h3>
+        <p>Career strategy, CV and LinkedIn structuring, interview prep, KUCCPS guidance and an accountability community &mdash; for serious professionals.</p>
+        <ul>
+          <li>Career strategy &amp; coaching</li>
+          <li>CV &amp; LinkedIn optimization</li>
+          <li>Interview &amp; negotiation prep</li>
+          <li>KUCCPS placement guidance</li>
+        </ul>
+        <span class="ac-link">
+          See professional services
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- CTA Section -->
-<section class="section section-cta">
-  <div class="cta-bg-shapes" aria-hidden="true">
-    <div class="blob blob-cta-1"></div>
-    <div class="blob blob-cta-2"></div>
+<!-- ============================================
+     STATS BAND — premium 4-up with blurred bg
+     ============================================ -->
+<section class="stats-premium">
+  <div class="stats-card liquid-glass" style="border-radius: var(--radius-l);">
+    <div class="stat-item fade-up">
+      <div class="stat-value">150<span class="sky"><em>+</em></span></div>
+      <div class="stat-label">Employees<br>structured</div>
+    </div>
+    <div class="stat-item fade-up" style="--delay: 100ms">
+      <div class="stat-value">8<span class="sky"> <em>yrs</em></span></div>
+      <div class="stat-label">Combined<br>leadership</div>
+    </div>
+    <div class="stat-item fade-up" style="--delay: 200ms">
+      <div class="stat-value">2<span class="sky"><em>/2</em></span></div>
+      <div class="stat-label">Co-founders<br>(local + global)</div>
+    </div>
+    <div class="stat-item fade-up" style="--delay: 300ms">
+      <div class="stat-value">100<span class="sky"><em>%</em></span></div>
+      <div class="stat-label">Kenyan labour<br>law compliant</div>
+    </div>
   </div>
-  <div class="container">
-    <div class="cta-content reveal-up">
-      <h2>Let's Build Structured Growth.</h2>
-      <p>Whether you are scaling a team or repositioning your career, Mawingu HR Solutions provides disciplined People advisory designed for measurable outcomes.</p>
-      <div class="cta-actions">
-        <a href="https://wa.me/254717736303?text=Hello%20Mawingu%2C%20I'd%20like%20to%20book%20a%20consultation." class="btn btn-primary btn-lg" target="_blank" rel="noopener">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          <span>Book a Consultation</span>
-        </a>
-        <a href="/professional-services" class="btn btn-outline-light btn-lg">
-          <span>Join the Career Community</span>
-        </a>
+</section>
+
+<!-- ============================================
+     THREE PILLARS — polished liquid-glass cards
+     ============================================ -->
+<section class="section" style="background: var(--cream);">
+  <div class="section-head" style="margin-bottom: clamp(40px, 5vw, 72px);">
+    <h2 class="fade-up" style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; letter-spacing: -0.02em;">
+      Built <em style="color: var(--blue);">clear</em>, reliable<br>and approachable.
+    </h2>
+    <p class="head-sub fade-up" style="--delay: 80ms">
+      Three principles &mdash; straight from how we operate. No jargon, no shelfware. Just the structure your business actually needs.
+    </p>
+  </div>
+
+  <div class="pillars-glass stagger">
+    <article class="pillar-glass">
+      <div class="glyph"><em>C</em></div>
+      <h3><em>Clear.</em></h3>
+      <p>Founders shouldn&rsquo;t need an HR degree to run their team. Our frameworks read like instructions, not policy theatre.</p>
+      <div class="pill-num">01 / Principle</div>
+    </article>
+    <article class="pillar-glass">
+      <div class="glyph"><em>R</em></div>
+      <h3><em>Reliable.</em></h3>
+      <p>Every system we deliver holds up under audit and scale &mdash; built with Kenyan labour law and international governance discipline.</p>
+      <div class="pill-num">02 / Principle</div>
+    </article>
+    <article class="pillar-glass">
+      <div class="glyph"><em>A</em></div>
+      <h3><em>Approachable.</em></h3>
+      <p>We&rsquo;re the HR partner you can actually call &mdash; with executive-level advisory built for small businesses, not enterprises.</p>
+      <div class="pill-num">03 / Principle</div>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================
+     TESTIMONIALS — 3 liquid glass cards on dark
+     ============================================ -->
+<section class="testimonials-band">
+  <div class="testimonials-head">
+    <span class="label label-light fade-up">What founders say</span>
+    <h2 class="fade-up" style="--delay: 80ms">
+      <em>Real teams.</em> <span class="muted">Real outcomes.</span>
+    </h2>
+  </div>
+
+  <div class="testimonials-grid stagger">
+    <article class="testimonial-card liquid-glass">
+      <div class="stars">
+        <svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9.5 17,14.5 18.5,22 12,18 5.5,22 7,14.5 2,9.5 9,9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9.5 17,14.5 18.5,22 12,18 5.5,22 7,14.5 2,9.5 9,9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9.5 17,14.5 18.5,22 12,18 5.5,22 7,14.5 2,9.5 9,9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9.5 17,14.5 18.5,22 12,18 5.5,22 7,14.5 2,9.5 9,9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9.5 17,14.5 18.5,22 12,18 5.5,22 7,14.5 2,9.5 9,9"/></svg>
       </div>
+      <blockquote>&ldquo;Mawingu didn&rsquo;t hand us a policy deck and disappear. They sat with our leads, wrote the playbooks, and made sure each one actually got used.&rdquo;</blockquote>
+      <div class="author">
+        <span class="avatar">JM</span>
+        <div>
+          <p class="who">Joseph Mwangi</p>
+          <p class="role">Founder · Growth-stage SME</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="testimonial-card liquid-glass">
+      <div class="stars">
+        <svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9.5 17,14.5 18.5,22 12,18 5.5,22 7,14.5 2,9.5 9,9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9.5 17,14.5 18.5,22 12,18 5.5,22 7,14.5 2,9.5 9,9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9.5 17,14.5 18.5,22 12,18 5.5,22 7,14.5 2,9.5 9,9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9.5 17,14.5 18.5,22 12,18 5.5,22 7,14.5 2,9.5 9,9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9.5 17,14.5 18.5,22 12,18 5.5,22 7,14.5 2,9.5 9,9"/></svg>
+      </div>
+      <blockquote>&ldquo;The compliance audit alone was worth the engagement. They found gaps we&rsquo;d have only discovered the day a regulator showed up.&rdquo;</blockquote>
+      <div class="author">
+        <span class="avatar">AK</span>
+        <div>
+          <p class="who">Amina Kariuki</p>
+          <p class="role">Director · Family-owned business</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="testimonial-card liquid-glass">
+      <div class="stars">
+        <svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9.5 17,14.5 18.5,22 12,18 5.5,22 7,14.5 2,9.5 9,9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9.5 17,14.5 18.5,22 12,18 5.5,22 7,14.5 2,9.5 9,9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9.5 17,14.5 18.5,22 12,18 5.5,22 7,14.5 2,9.5 9,9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9.5 17,14.5 18.5,22 12,18 5.5,22 7,14.5 2,9.5 9,9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9.5 17,14.5 18.5,22 12,18 5.5,22 7,14.5 2,9.5 9,9"/></svg>
+      </div>
+      <blockquote>&ldquo;My CV finally read like the work I actually do. Two weeks later I was in interviews I&rsquo;d been blocked from for a year.&rdquo;</blockquote>
+      <div class="author">
+        <span class="avatar">DO</span>
+        <div>
+          <p class="who">Daniel Otieno</p>
+          <p class="role">Senior professional</p>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================
+     CTA FOOTER — cinematic, video-bg style
+     ============================================ -->
+<section class="cta-cinema">
+  <div class="cta-cinema-inner">
+    <span class="label label-light fade-up" style="justify-content: center;">Start the conversation</span>
+    <h2 class="fade-up" style="--delay: 80ms">
+      Let&rsquo;s build <em class="glow">structured</em><br>
+      <em>growth</em>, <span class="muted">together.</span>
+    </h2>
+    <p class="fade-up" style="--delay: 160ms">
+      Whether you&rsquo;re scaling a team or repositioning your career, Mawingu provides disciplined people advisory designed for measurable outcomes.
+    </p>
+    <div class="cta-cinema-actions fade-up" style="--delay: 240ms">
+      <a href="https://wa.me/254717736303?text=Hello%20Mawingu%2C%20I'd%20like%20to%20book%20a%20consultation."
+         class="btn btn-primary btn-lg"
+         target="_blank" rel="noopener"
+         style="padding: 20px 36px;">
+        <span>Book a consultation</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="/professional-services" class="liquid-glass-strong btn btn-lg"
+         style="color: var(--white); border-radius: 999px; padding: 20px 36px;">
+        <span>For professionals</span>
+      </a>
     </div>
   </div>
 </section>

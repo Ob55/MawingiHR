@@ -1,66 +1,50 @@
-  <!-- Footer -->
   <footer class="site-footer">
-    <div class="footer-wave" aria-hidden="true">
-      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-        <path d="M0,40 C320,100 480,0 720,50 C960,100 1200,20 1440,60 L1440,120 L0,120 Z" fill="var(--color-navy)"/>
-      </svg>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img class="footer-logo" src="/images/mawingu-logo.png" alt="Mawingu HR Solutions" loading="lazy" width="666" height="374">
+        <p class="footer-tag">Connecting people<br>with purpose.</p>
+        <p>Strategic HR for growth-stage businesses and ambitious professionals across Kenya.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Corporate</h4>
+        <ul>
+          <li><a href="/corporate-services#hr-advisory">HR Advisory</a></li>
+          <li><a href="/corporate-services#team-building">Team Building</a></li>
+          <li><a href="/corporate-services#performance">Performance Systems</a></li>
+          <li><a href="/corporate-services#recruitment">Talent Strategy</a></li>
+          <li><a href="/corporate-services#bpo-management">BPO &amp; Call Centre</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Professionals</h4>
+        <ul>
+          <li><a href="/professional-services#career">Career Strategy</a></li>
+          <li><a href="/professional-services#cv">CV &amp; LinkedIn</a></li>
+          <li><a href="/professional-services#interview">Interview Prep</a></li>
+          <li><a href="/professional-services#kuccps">KUCCPS Assistance</a></li>
+          <li><a href="/professional-services#community">Career Community</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Reach Us</h4>
+        <address>
+          Bemuda Plaza, First Floor B2<br>
+          Ngong Road, Nairobi<br><br>
+          <a href="tel:+254717736303">0717 736 303</a><br>
+          <a href="mailto:admin@mawinguhr.co.ke">admin@mawinguhr.co.ke</a>
+        </address>
+      </div>
     </div>
 
-    <div class="footer-body">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-brand">
-            <img class="footer-logo" src="/images/mawingu-logo.png" alt="Mawingu HR Solutions Logo">
-            <p class="footer-tagline">Clarity in People.<br>Structure in Growth.</p>
-          </div>
-
-          <div class="footer-links-group">
-            <h4>Services</h4>
-            <ul>
-              <li><a href="/corporate-services">HR Advisory</a></li>
-              <li><a href="/corporate-services">Compliance & Payroll</a></li>
-              <li><a href="/corporate-services">Performance Systems</a></li>
-              <li><a href="/corporate-services">Recruitment</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-links-group">
-            <h4>Professionals</h4>
-            <ul>
-              <li><a href="/professional-services">Career Strategy</a></li>
-              <li><a href="/professional-services">CV & LinkedIn</a></li>
-              <li><a href="/professional-services">Interview Prep</a></li>
-              <li><a href="/professional-services">Career Community</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-links-group">
-            <h4>Company</h4>
-            <ul>
-              <li><a href="/about">Our Story</a></li>
-              <li><a href="/about">Leadership</a></li>
-              <li><a href="/contact">Contact Us</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-contact">
-            <h4>Reach Us</h4>
-            <address>
-              <p>Bemuda Plaza, First Floor B2</p>
-              <p>Ngong Road, Nairobi</p>
-              <p><a href="tel:+254717736303">0717 736 303</a></p>
-              <p><a href="mailto:admin@mawinguhr.co.ke">admin@mawinguhr.co.ke</a></p>
-            </address>
-          </div>
-        </div>
-
-        <div class="footer-bottom">
-          <p>&copy; 2026 Mawingu HR Solutions. All rights reserved.</p>
-        </div>
-      </div>
+    <div class="footer-bottom">
+      <span class="mark">Mawingu HR Solutions</span>
+      <span>&copy; <%= new Date().getFullYear() %> Mawingu HR Solutions. All rights reserved.</span>
     </div>
   </footer>
 
-  <script src="/js/main.js"></script>
+  <script src="/js/main.js?v=<%= assetVersion %>"></script>
 </body>
 </html>

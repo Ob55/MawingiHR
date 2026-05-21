@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+  <title id="title">African professionals standing in a modern office lobby</title>
+  <desc id="desc">A group of African business professionals stand confidently in a bright office lobby with natural daylight and a polished corporate atmosphere.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6fbff"/>
+      <stop offset="100%" stop-color="#dce9f4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#214163" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1100" fill="url(#bg)"/>
+  <rect y="810" width="1600" height="290" fill="#efe2cf"/>
+
+  <path d="M170 120h1260v510H170z" fill="#f8fbfe"/>
+  <path d="M170 120h1260v94H170z" fill="#eef5fb"/>
+  <rect x="220" y="190" width="290" height="480" rx="28" fill="#fbfdff"/>
+  <rect x="550" y="190" width="290" height="480" rx="28" fill="#fbfdff"/>
+  <rect x="880" y="190" width="290" height="480" rx="28" fill="#fbfdff"/>
+  <rect x="1210" y="190" width="170" height="480" rx="28" fill="#fbfdff"/>
+  <rect x="238" y="208" width="254" height="444" rx="22" fill="#d9e9f5"/>
+  <rect x="568" y="208" width="254" height="444" rx="22" fill="#dcebf6"/>
+  <rect x="898" y="208" width="254" height="444" rx="22" fill="#d7e8f4"/>
+
+  <g filter="url(#shadow)">
+    <rect x="620" y="580" width="360" height="170" rx="32" fill="#ffffff" opacity="0.92"/>
+    <rect x="670" y="626" width="260" height="12" rx="6" fill="#89a7c2"/>
+    <rect x="670" y="656" width="180" height="12" rx="6" fill="#c0d4e3"/>
+    <rect x="670" y="686" width="210" height="12" rx="6" fill="#c0d4e3"/>
+  </g>
+
+  <g>
+    <ellipse cx="430" cy="916" rx="74" ry="26" fill="#8c6c49" opacity="0.16"/>
+    <circle cx="430" cy="392" r="52" fill="#6f452e"/>
+    <rect x="372" y="446" width="116" height="216" rx="40" fill="#f2e7dc"/>
+    <rect x="358" y="512" width="144" height="40" rx="20" fill="#1a3b63"/>
+    <rect x="392" y="662" width="28" height="224" rx="14" fill="#34353d"/>
+    <rect x="440" y="662" width="28" height="224" rx="14" fill="#34353d"/>
+    <rect x="344" y="518" width="28" height="136" rx="14" fill="#6f452e"/>
+    <rect x="488" y="518" width="28" height="136" rx="14" fill="#6f452e"/>
+  </g>
+
+  <g>
+    <ellipse cx="620" cy="934" rx="74" ry="26" fill="#8c6c49" opacity="0.16"/>
+    <circle cx="620" cy="364" r="50" fill="#573321"/>
+    <rect x="568" y="416" width="104" height="224" rx="38" fill="#dfe4ea"/>
+    <rect x="554" y="486" width="132" height="40" rx="20" fill="#ffffff"/>
+    <rect x="584" y="640" width="26" height="240" rx="13" fill="#34353d"/>
+    <rect x="632" y="640" width="26" height="240" rx="13" fill="#34353d"/>
+    <rect x="542" y="492" width="24" height="132" rx="12" fill="#573321"/>
+    <rect x="674" y="492" width="24" height="132" rx="12" fill="#573321"/>
+  </g>
+
+  <g>
+    <ellipse cx="800" cy="944" rx="80" ry="28" fill="#8c6c49" opacity="0.16"/>
+    <circle cx="800" cy="334" r="54" fill="#7a4d34"/>
+    <rect x="740" y="392" width="120" height="240" rx="44" fill="#efe4d7"/>
+    <rect x="724" y="468" width="152" height="42" rx="21" fill="#c69345"/>
+    <rect x="764" y="632" width="28" height="248" rx="14" fill="#34353d"/>
+    <rect x="812" y="632" width="28" height="248" rx="14" fill="#34353d"/>
+    <rect x="712" y="476" width="26" height="136" rx="13" fill="#7a4d34"/>
+    <rect x="862" y="476" width="26" height="136" rx="13" fill="#7a4d34"/>
+  </g>
+
+  <g>
+    <ellipse cx="988" cy="934" rx="74" ry="26" fill="#8c6c49" opacity="0.16"/>
+    <circle cx="988" cy="362" r="50" fill="#5f3927"/>
+    <rect x="936" y="416" width="104" height="224" rx="38" fill="#d9b692"/>
+    <rect x="922" y="486" width="132" height="40" rx="20" fill="#295f94"/>
+    <rect x="952" y="640" width="26" height="240" rx="13" fill="#34353d"/>
+    <rect x="1000" y="640" width="26" height="240" rx="13" fill="#34353d"/>
+    <rect x="910" y="492" width="24" height="132" rx="12" fill="#5f3927"/>
+    <rect x="1042" y="492" width="24" height="132" rx="12" fill="#5f3927"/>
+  </g>
+
+  <g>
+    <ellipse cx="1162" cy="916" rx="74" ry="26" fill="#8c6c49" opacity="0.16"/>
+    <circle cx="1162" cy="392" r="52" fill="#6f452e"/>
+    <rect x="1104" y="446" width="116" height="216" rx="40" fill="#f2e7dc"/>
+    <rect x="1090" y="512" width="144" height="40" rx="20" fill="#1a3b63"/>
+    <rect x="1124" y="662" width="28" height="224" rx="14" fill="#34353d"/>
+    <rect x="1172" y="662" width="28" height="224" rx="14" fill="#34353d"/>
+    <rect x="1076" y="518" width="28" height="136" rx="14" fill="#6f452e"/>
+    <rect x="1220" y="518" width="28" height="136" rx="14" fill="#6f452e"/>
+  </g>
+</svg>

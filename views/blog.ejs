@@ -1,0 +1,79 @@
+<%- include('partials/header') %>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-grid">
+    <div>
+      <span class="hero-eyebrow fade-up">Blog &amp; insights</span>
+      <h1 class="page-hero-title fade-up" style="--delay: 80ms">
+        <span class="line">Notes on</span>
+        <span class="line"><span class="serif" style="color: var(--sky);">people</span></span>
+        <span class="line">strategy.</span>
+      </h1>
+    </div>
+    <p class="page-hero-sub fade-up" style="--delay: 160ms">
+      Practical thinking on building HR systems for Kenyan SMEs &mdash; from compliance to culture. Written for founders, by founders.
+    </p>
+  </div>
+</section>
+
+<!-- BLOG POSTS -->
+<section class="section">
+  <div class="section-head">
+    <h2 class="fade-up">Latest <span class="serif" style="color: var(--blue);">articles</span>.</h2>
+    <p class="head-sub fade-up" style="--delay: 80ms">Structured HR thinking for small businesses in Kenya &mdash; refreshed regularly.</p>
+  </div>
+
+  <div id="blogPosts" class="blog-posts-grid">
+    <div class="blog-loading">Loading articles&hellip;</div>
+  </div>
+
+  <div id="blogEmpty" class="blog-empty" hidden>
+    <p>No articles published yet. Check back soon.</p>
+  </div>
+</section>
+
+<!-- BLOG POST MODAL -->
+<div id="blogModal" class="blog-modal" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="blog-modal-backdrop" data-close></div>
+  <article class="blog-modal-card" role="document">
+    <button type="button" class="blog-modal-close" data-close aria-label="Close article">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="blog-modal-media">
+      <img id="modalImage" alt="">
+    </div>
+    <div class="blog-modal-body">
+      <div class="blog-modal-meta">
+        <span id="modalDate"></span>
+      </div>
+      <h2 id="modalTitle" class="blog-modal-title"></h2>
+      <p id="modalShort" class="blog-modal-desc"></p>
+      <div id="modalContent" class="blog-modal-content"></div>
+    </div>
+  </article>
+</div>
+
+<!-- SUBSCRIBE CTA -->
+<section class="cta-band">
+  <div class="cta-grid">
+    <h2 class="fade-up">Get the next <span class="serif" style="color: var(--sky); font-size: 1.05em;">article</span> when it drops.</h2>
+    <div class="cta-right fade-up" style="--delay: 120ms">
+      <p>One email per article. No marketing noise. Unsubscribe anytime.</p>
+      <form action="mailto:admin@mawinguhr.co.ke" method="post" enctype="text/plain" style="display: flex; gap: 12px; flex-wrap: wrap; width: 100%;">
+        <input type="email" name="email" required placeholder="you@company.com"
+               style="flex: 1; min-width: 240px; padding: 16px 20px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.06); color: var(--white); font-family: inherit; font-size: 1rem;">
+        <button class="btn btn-primary btn-lg" type="submit">
+          <span>Notify me</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+  window.BLOG_API_URL = '<%= blogApiUrl %>';
+</script>
+
+<%- include('partials/footer') %>

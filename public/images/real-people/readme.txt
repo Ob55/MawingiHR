@@ -1,0 +1,1 @@
+Place real professional human images for HR, corporate training, and business services in this folder. Use royalty-free, high-quality images only. Example filenames: team-building.jpg, corporate-mc.jpg, hr-meeting.jpg, business-training.jpg

@@ -1,9 +1,10 @@
 const express = require('express');
 const path = require('path');
+const analytics = require('./analytics');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const ASSET_VERSION = '20260521-redesign-18';
+const ASSET_VERSION = '20260615-analytics-1';
 // URL of the blog admin's /api/posts endpoint. The Vercel deployment of the
 // MawingHRBlog repo serves this. Override with the BLOG_API_URL env var if the
 // admin ever moves to a different host.
@@ -23,6 +24,10 @@ app.use((req, res, next) => {
 app.use(express.static(path.join(__dirname, 'public'), {
   maxAge: 0
 }));
+
+// Site view tracking: counts page views + blog-post opens, exposes /api/stats.
+// (Mounted after static so asset requests are never counted.)
+analytics.mount(app);
 
 // Routes
 app.get('/', (req, res) => {

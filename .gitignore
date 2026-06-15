@@ -1,2 +1,6 @@
 node_modules/
 .env
+
+# Runtime analytics data (view counts) — generated on the server, not committed.
+data/analytics.json
+data/analytics.json.tmp

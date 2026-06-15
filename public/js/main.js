@@ -206,12 +206,27 @@
   // -------- Blog modal --------
   let lastFocusedEl = null;
 
+  // Fire-and-forget beacon so the server can tally which posts get opened.
+  function trackPostView(post) {
+    try {
+      const payload = JSON.stringify({ type: 'post', id: post.id, title: post.title });
+      if (navigator.sendBeacon) {
+        navigator.sendBeacon('/api/track', new Blob([payload], { type: 'application/json' }));
+      } else {
+        fetch('/api/track', { method: 'POST', body: payload, keepalive: true });
+      }
+    } catch (_) { /* analytics must never break the page */ }
+  }
+
   function openBlogModal(id) {
     const post = blogPostsCache.find((p) => p.id === id);
     const modal = document.getElementById('blogModal');
     if (!post || !modal) return;
 
     lastFocusedEl = document.activeElement;
+
+    // Count this post open for the weekly "Top posts by views" report.
+    trackPostView(post);
 
     const img = document.getElementById('modalImage');
     if (post.image) {
